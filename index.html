@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Student Marks Calculator</h1>
+    <div id="student-form">
+        <label for="name">Student Name:</label>
+        <input type="text" id="name" required>
+        <label for="sex">Sex:</label>
+        <select id="sex" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <div id="subjects">
+            <label for="english">English:</label>
+            <input type="number" id="english" required>
+            <label for="maths">Maths:</label>
+            <input type="number" id="maths" required>
+            <label for="chichewa">Chichewa:</label>
+            <input type="number" id="chichewa" required>
+            <label for="life-skills">Life Skills:</label>
+            <input type="number" id="life-skills" required>
+            <label for="expressive-arts">Expressive Arts:</label>
+            <input type="number" id="expressive-arts" required>
+            <label for="social-studies">Social Studies:</label>
+            <input type="number" id="social-studies" required>
+            <label for="agri-science">Agriculture & Science:</label>
+            <input type="number" id="agri-science" required>
+        </div>
+        <button onclick="addStudent()">Add Student</button>
+        <button onclick="finalizeEntries()">Finalize Entries</button>
+        <button onclick="downloadCSV()">Download CSV</button>
+        <button onclick="downloadPDF()">Download PDF</button>
+    </div>
+    <h2>Student List</h2>
+    <table id="student-table">
+        <thead>
+            <tr>
+                <th>Position</th>
+                <th>Name</th>
+                <th>Sex</th>
+                <th>English</th>
+                <th>Maths</th>
+                <th>Chichewa</th>
+                <th>Life Skills</th>
+                <th>Expressive Arts</th>
+                <th>Social Studies</th>
+                <th>Agriculture & Science</th>
+                <th>Total Marks</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+        <tbody id="student-list">
+            <!-- Student rows will be appended here -->
+        </tbody>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.14/jspdf.plugin.autotable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
